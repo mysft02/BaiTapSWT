@@ -51,7 +51,7 @@ public class TC08 {
             myAccElem.click();
             //Step 3. Login in application using previously created credential
             WebElement mailElem = driver.findElement(By.xpath("/html/body/div/div/div[2]/div/div/div/form/div/div[2]/div[1]/ul/li[1]/div/input"));
-            mailElem.sendKeys("dungntse171487@fpt.edu.vn");
+            mailElem.sendKeys("sadfgsdg@gmail.com");
             WebElement pwdElem = driver.findElement(By.xpath("/html/body/div/div/div[2]/div/div/div/form/div/div[2]/div[1]/ul/li[2]/div/input"));
             pwdElem.sendKeys("123456");
             WebElement logElem = driver.findElement(By.xpath("/html/body/div/div/div[2]/div/div/div/form/div/div[2]/div[2]/button"));
@@ -105,7 +105,7 @@ public class TC08 {
             } catch (Exception e){
                 System.out.println("shipping drop down error ");
             }*/
-            driver.findElement(By.xpath("/html/body/div/div/div[2]/div/div[1]/ol/li[2]/div[2]/form/ul/li[3]/label")).click();
+            driver.findElement(By.xpath("/html/body/div/div/div[2]/div/div[1]/ol/li[2]/div[2]/form/ul/li[3]/label")). click();
 
             driver.findElement(By.xpath("/html/body/div/div/div[2]/div/div[1]/ol/li[2]/div[2]/form/div/button/span/span")).click();
 

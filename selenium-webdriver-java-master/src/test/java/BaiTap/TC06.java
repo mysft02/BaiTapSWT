@@ -60,8 +60,8 @@ public class TC06 {
             driver.get("http://live.techpanda.org/");
             driver.findElement(By.xpath("//span[@class='label'][normalize-space()='Account']")).click();
             driver.findElement(By.xpath("//a[contains(@title,'Log In')]")).click();
-            driver.findElement(By.xpath("//input[@id='email']")).sendKeys("loc@gmail.com");
-            driver.findElement(By.xpath("//input[@id='pass']")).sendKeys("123456789");
+            driver.findElement(By.xpath("//input[@id='email']")).sendKeys("sadfgsdg@gmail.com");
+            driver.findElement(By.xpath("//input[@id='pass']")).sendKeys("123456");
             driver.findElement(By.xpath("//button[@id='send2']")).click();
             driver.findElement(By.xpath("//a[normalize-space()='Mobile']")).click();
             driver.findElement(By.xpath("//li[1]//div[1]//div[3]//ul[1]//li[1]//a[1]")).click();
@@ -73,7 +73,7 @@ public class TC06 {
             WebElement state = driver.findElement(By.xpath("//select[@id='region_id']"));
             Select stateSelect = new Select(state);
             stateSelect.selectByValue("2");
-            driver.findElement(By.xpath("//input[@id='postcode']")).sendKeys("1111");
+            driver.findElement(By.xpath("//input[@id='postcode']")).sendKeys("123456");
             driver.findElement(By.xpath("//span[contains(text(),'Estimate')]")).click();
             WebElement price = driver.findElement(By.xpath("//label[@for='s_method_flatrate_flatrate']//span"));
             WebElement priceName = driver.findElement(By.cssSelector("dl[class='sp-methods'] dt"));
@@ -109,7 +109,7 @@ public class TC06 {
             WebElement region = driver.findElement(By.xpath("//select[@id='billing:region_id']"));
             Select regionSelect = new Select(region);
             regionSelect.selectByValue("2");
-            driver.findElement(By.xpath("//input[@id='billing:postcode']")).sendKeys("1111");
+            driver.findElement(By.xpath("//input[@id='billing:postcode']")).sendKeys("123456");
             driver.findElement(By.xpath("//input[@id='billing:telephone']")).sendKeys("0123456789");
             driver.findElement(By.xpath("//input[@id='billing:fax']")).sendKeys("123456789");
             driver.findElement(By.xpath("//label[@for='billing:use_for_shipping_no']")).click();
@@ -139,7 +139,7 @@ public class TC06 {
             WebElement regioned = driver.findElement(By.xpath("//select[@id='shipping:region_id']"));
             Select selectedRegion = new Select(regioned);
             selectedRegion.selectByValue("2");
-            driver.findElement(By.xpath("//input[@id='shipping:postcode']")).sendKeys("1111");
+            driver.findElement(By.xpath("//input[@id='shipping:postcode']")).sendKeys("123456");
             driver.findElement(By.xpath("//input[@id='shipping:telephone']")).sendKeys("0123456789");
             driver.findElement(By.xpath("//input[@id='shipping:fax']")).sendKeys("123456789");
             driver.findElement(By.xpath("//button[@onclick='shipping.save()']")).click();

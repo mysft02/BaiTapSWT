@@ -55,7 +55,8 @@ public class TC05 {
             WebElement lastNameElem = driver.findElement(By.xpath("/html/body/div/div/div[2]/div/div/div/form/div[1]/ul/li[1]/div/div[3]/div/input"));
             lastNameElem.sendKeys("Nguyen");
             WebElement emailElem = driver.findElement(By.xpath("/html/body/div/div/div[2]/div/div/div/form/div[1]/ul/li[2]/div/input"));
-            emailElem.sendKeys("asdasd@g.com");
+            emailElem.clear();
+            emailElem.sendKeys("sadfgsdg@gmail.com");
             WebElement pwdElem = driver.findElement(By.xpath("/html/body/div/div/div[2]/div/div/div/form/div[1]/ul/li[3]/div[1]/div/input"));
             pwdElem.sendKeys("123456");
             WebElement cfmPwdElem = driver.findElement(By.xpath("/html/body/div/div/div[2]/div/div/div/form/div[1]/ul/li[3]/div[2]/div/input"));
